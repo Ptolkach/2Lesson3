@@ -26,8 +26,14 @@
                 <MenuItem Header="_Выход" Command="ApplicationCommands.Close"/>
             </MenuItem>
             <MenuItem Header="_Правка"/>
+            <MenuItem Header="Вид">
+                <MenuItem Header="_Тема">
+                    <MenuItem Header="Светлая"  Click="MenuItem_Click"/>
+                    <MenuItem Header="Темная" Click="MenuItem_Click_1"/>
+                </MenuItem>
+            </MenuItem>
             <MenuItem Header="_Справка"/>
-        </Menu>
+        </Menu> 
         <ToolBarTray Grid.Row="1">
             <ToolBar Margin="5" Padding="5">
                 <ComboBox Margin="5" 
@@ -64,6 +70,6 @@
                 </StackPanel>
             </ToolBar>
         </ToolBarTray>
-        <TextBox x:Name="textBox" Grid.Row="2" Margin="5" Padding="5" FontSize="16" FontFamily="Arial" TextWrapping="Wrap" Text="&#x9;" VerticalScrollBarVisibility="Auto"/>
+        <TextBox x:Name="textBox" Grid.Row="2" Margin="5" Padding="5" FontSize="16" FontFamily="Arial" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"/>
     </Grid>
 </Window>
